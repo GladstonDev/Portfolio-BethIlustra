@@ -2,7 +2,7 @@
 
 Portfólio oficial e vitrine digital da ilustradora independente **Elizabeth Meireiles**, conhecida artisticamente como **Beth Ilustra** ([@bethilustra](https://www.instagram.com/bethilustra)). 
 
-Este projeto está sendo desenvolvido por **Gladston Lendey** especialmente para sua parceira de vida, com o objetivo de centralizar suas obras, projetos editoriais e produtos em um canal próprio — garantindo independência dos algoritmos das redes sociais e facilitando o contato direto com editoras, autores e leitores.
+Este projeto está sendo desenvolvido por **Gladston Lendey** especialmente para sua parceira de vida, com o objetivo de centralizar suas obras, projetos editoriais e produtos em um canal próprio, garantindo independência dos algoritmos das redes sociais e facilitando o contato direto com editoras, autores e leitores.
 
 ---
 
@@ -35,7 +35,6 @@ Este site reúne as principais frentes de trabalho da artista:
 
 ## Tecnologias Utilizadas
 
-*(Substitua ou edite esta seção conforme a stack escolhida para o repositório)*
 * **Frontend:** HTML5, CSS3, JavaScript
 * **Hospedagem:** GitHub Pages
 * **Domínio:** Registro próprio
