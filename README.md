@@ -36,7 +36,7 @@ Este site reúne as principais frentes de trabalho da artista:
 ## Tecnologias Utilizadas
 
 *(Substitua ou edite esta seção conforme a stack escolhida para o repositório)*
-* **Frontend:** HTML5, CSS3, JavaScript *(ou Next.js / Astro)*
+* **Frontend:** HTML5, CSS3, JavaScript
 * **Hospedagem:** GitHub Pages
 * **Domínio:** Registro próprio
 
@@ -46,4 +46,4 @@ Este site reúne as principais frentes de trabalho da artista:
 
 * **Arte & Direção Criativa:** Elizabeth Meireiles — [@bethilustra](https://www.instagram.com/bethilustra)
 * **Desenvolvimento Web:** Gladston Lendey
-* **E-mail para projetos e comissões:** `contato@bethilustra.com.br` *(atualize com o e-mail oficial)*
+* **E-mail para projetos e comissões:** `Elizabethmeirelesart@gmail.com`
