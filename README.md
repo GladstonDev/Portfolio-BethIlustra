@@ -37,7 +37,7 @@ Este site reúne as principais frentes de trabalho da artista:
 
 *(Substitua ou edite esta seção conforme a stack escolhida para o repositório)*
 * **Frontend:** HTML5, CSS3, JavaScript *(ou Next.js / Astro)*
-* **Hospedagem:** Vercel / Netlify / GitHub Pages
+* **Hospedagem:** GitHub Pages
 * **Domínio:** Registro próprio
 
 ---
