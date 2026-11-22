@@ -36,7 +36,7 @@ Este site reúne as principais frentes de trabalho da artista:
 ## Tecnologias Utilizadas
 
 * **Frontend:** HTML5, CSS3, JavaScript
-* **Hospedagem:** GitHub Pages
+* **Hospedagem:** Netlify / GitHub Pages
 * **Domínio:** Registro próprio
 
 ---
