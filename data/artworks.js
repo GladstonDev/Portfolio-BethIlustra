@@ -2,7 +2,7 @@ export const artworks = [
   {
     id: "img-4947",
     title: "Ilustra para “Meu erro mais certo” — Silvie Basset",
-    category: "editorial",
+    category: "cenas-personagens",
     medium: "Ilustração digital",
     year: 2026,
     description: "Cena do casal no cinema.",
@@ -12,7 +12,7 @@ export const artworks = [
   {
     id: "img-4946",
     title: "Ilustra para “Faíscas da Razão” — Pamela da Silva",
-    category: "editorial",
+    category: "cenas-personagens",
     medium: "Ilustração digital",
     year: 2026,
     description: "Cena de casal no inverno de Yale.",
@@ -22,7 +22,7 @@ export const artworks = [
   {
     id: "img-4945",
     title: "Mapa de “Lemniscate” — Bruna Palhano",
-    category: "editorial",
+    category: "mapas",
     medium: "Mapa ilustrado",
     year: 2025,
     description: "Mapa ilustrado para a obra “Lemniscate” de Bruna Palhano.",
@@ -32,7 +32,7 @@ export const artworks = [
   {
     id: "img-4944",
     title: "Ilustra de “Melhores Inimigos” — RoseDream",
-    category: "editorial",
+    category: "cenas-personagens",
     medium: "Ilustração digital",
     year: 2025,
     description: "Cena de casal no elevador.",
@@ -42,7 +42,7 @@ export const artworks = [
   {
     id: "img-4943",
     title: "Mapa de “Dominus” — Thalissa Betineli",
-    category: "editorial",
+    category: "mapas",
     medium: "Mapa ilustrado",
     year: 2025,
     description: "Mapa do reino de Izanani.",
@@ -52,7 +52,7 @@ export const artworks = [
   {
     id: "img-4942",
     title: "Mapa de “DREAMFEST 2025”",
-    category: "comercial",
+    category: "outros-comerciais",
     medium: "Mapa para evento",
     year: 2025,
     description: "Mapa para o evento geek.",
@@ -62,7 +62,7 @@ export const artworks = [
   {
     id: "img-4941",
     title: "Mapa de “Coração de Gelo e Rosas” — Babi A. Sette",
-    category: "editorial",
+    category: "mapas",
     medium: "Mapa ilustrado",
     year: 2025,
     description: "Mapa do reino de Alfehim.",
@@ -72,7 +72,7 @@ export const artworks = [
   {
     id: "img-4940",
     title: "Capa para “Amor Através da Rede” — RoseDream",
-    category: "editorial",
+    category: "capas",
     medium: "Capa de livro",
     year: 2026,
     description: "Capa ilustrada para “Amor Através da Rede” de RoseDream.",
@@ -82,7 +82,7 @@ export const artworks = [
   {
     id: "img-4939",
     title: "Capa para “Amor entre Apostas” — RoseDream",
-    category: "editorial",
+    category: "capas",
     medium: "Capa de livro",
     year: 2026,
     description: "Capa ilustrada para “Amor entre Apostas” de RoseDream.",
