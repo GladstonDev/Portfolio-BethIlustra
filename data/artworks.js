@@ -6,8 +6,8 @@ export const artworks = [
     medium: "Ilustração digital",
     year: 2026,
     description: "Cena do casal no cinema.",
-    thumb: "assets//thumb//IMG_4947.JPG.webp",
-    full: "assets//full//IMG_4947.JPG.webp"
+    thumb: "assets/thumb/IMG_4947.JPG.webp",
+    full: "assets/full/IMG_4947.JPG.webp"
   },
   {
     id: "img-4946",
@@ -16,8 +16,8 @@ export const artworks = [
     medium: "Ilustração digital",
     year: 2026,
     description: "Cena de casal no inverno de Yale.",
-    thumb: "assets//thumb//IMG_4946.JPG.webp",
-    full: "assets//full//IMG_4946.JPG.webp"
+    thumb: "assets/thumb/IMG_4946.JPG.webp",
+    full: "assets/full/IMG_4946.JPG.webp"
   },
   {
     id: "img-4945",
@@ -26,8 +26,8 @@ export const artworks = [
     medium: "Mapa ilustrado",
     year: 2025,
     description: "Mapa ilustrado para a obra “Lemniscate” de Bruna Palhano.",
-    thumb: "assets//thumb//IMG_4945.JPG.webp",
-    full: "assets//full//IMG_4945.JPG.webp"
+    thumb: "assets/thumb/IMG_4945.JPG.webp",
+    full: "assets/full/IMG_4945.JPG.webp"
   },
   {
     id: "img-4944",
@@ -36,8 +36,8 @@ export const artworks = [
     medium: "Ilustração digital",
     year: 2025,
     description: "Cena de casal no elevador.",
-    thumb: "assets//thumb//img_4944.jpg.webp",
-    full: "assets//full//img_4944.jpg.webp"
+    thumb: "assets/thumb/IMG_4944.JPG.webp",
+    full: "assets/full/IMG_4944.JPG.webp"
   },
   {
     id: "img-4943",
@@ -46,8 +46,8 @@ export const artworks = [
     medium: "Mapa ilustrado",
     year: 2025,
     description: "Mapa do reino de Izanani.",
-    thumb: "assets//thumb//img_4943.jpg.webp",
-    full: "assets//full//img_4943.jpg.webp"
+    thumb: "assets/thumb/IMG_4943.JPG.webp",
+    full: "assets/full/IMG_4943.JPG.webp"
   },
   {
     id: "img-4942",
@@ -56,8 +56,8 @@ export const artworks = [
     medium: "Mapa para evento",
     year: 2025,
     description: "Mapa para o evento geek.",
-    thumb: "assets//thumb//IMG_4942.JPG.webp",
-    full: "assets//full//IMG_4942.JPG.webp"
+    thumb: "assets/thumb/IMG_4942.JPG.webp",
+    full: "assets/full/IMG_4942.JPG.webp"
   },
   {
     id: "img-4941",
@@ -66,8 +66,8 @@ export const artworks = [
     medium: "Mapa ilustrado",
     year: 2025,
     description: "Mapa do reino de Alfehim.",
-    thumb: "assets//thumb//IMG_4941.JPG.webp",
-    full: "assets//full//IMG_4941.JPG.webp"
+    thumb: "assets/thumb/IMG_4941.JPG.webp",
+    full: "assets/full/IMG_4941.JPG.webp"
   },
   {
     id: "img-4940",
@@ -76,8 +76,8 @@ export const artworks = [
     medium: "Capa de livro",
     year: 2026,
     description: "Capa ilustrada para “Amor Através da Rede” de RoseDream.",
-    thumb: "assets//thumb//IMG_4940.JPG.webp",
-    full: "assets//full//IMG_4940.JPG.webp"
+    thumb: "assets/thumb/IMG_4940.JPG.webp",
+    full: "assets/full/IMG_4940.JPG.webp"
   },
   {
     id: "img-4939",
@@ -86,7 +86,7 @@ export const artworks = [
     medium: "Capa de livro",
     year: 2026,
     description: "Capa ilustrada para “Amor entre Apostas” de RoseDream.",
-    thumb: "assets//thumb//IMG_4939.JPG.webp",
-    full: "assets//full//IMG_4939.JPG.webp"
+    thumb: "assets/thumb/IMG_4939.JPG.webp",
+    full: "assets/full/IMG_4939.JPG.webp"
   }
 ];
