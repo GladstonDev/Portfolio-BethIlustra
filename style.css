@@ -2,7 +2,7 @@
   /* Tons inspirados nas suas artes, levemente mais escuros */
   --bg-orange: #c4835b;
   --bg-blue: #6e9b9a;
-  --bg: url("assets/bg.png") center / cover no-repeat fixed;
+  --bg: url("assets/bg.png") center / cover no-repeat;
   --surface: rgba(22, 27, 29, 0.72);
   --text: #ffffff;
   --muted: #ffffff;
@@ -32,17 +32,28 @@ html {
 
 body {
   background-color: var(--bg-blue);
-  background-image: url("assets/bg.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   min-height: 100vh;
+  min-height: 100dvh;
   color: var(--text);
   font-family: system-ui, -apple-system, sans-serif;
   font-weight: 700;
   line-height: 1.6;
   text-shadow: var(--text-shadow-strong);
+  position: relative;
+}
+
+/* Camada de fundo compatível com iOS Safari e Android Chrome */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: var(--bg-blue);
+  background-image: url("assets/bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 h1, h2, h3, strong {
@@ -507,6 +518,11 @@ p, span, blockquote, a, button {
 }
 
 @media (max-width: 550px) {
+  body::before {
+    background-size: cover;
+    background-position: center top;
+  }
+
   .logo-img {
     max-height: 140px;
   }
