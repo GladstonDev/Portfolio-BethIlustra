@@ -37,11 +37,9 @@ function renderGallery(filter = "all") {
   }
 
   filtered.forEach((art, index) => {
-    const numLabel = formatNumber(index, filtered.length);
     const card = document.createElement("article");
     card.className = "art-card";
     card.innerHTML = `
-      <span class="card-index">${numLabel}</span>
       <img src="${art.thumb}" alt="${art.title}" loading="lazy" />
       <div class="art-overlay">
         <span>${art.title}</span>
