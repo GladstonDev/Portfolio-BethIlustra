@@ -18,6 +18,28 @@ const lightboxCounter = document.getElementById("lightbox-counter");
 
 let currentItems = [];
 let currentIndex = 0;
+let scrollTicking = false;
+
+function updateBackgroundScaleOnScroll() {
+  const scrollTop = window.scrollY || window.pageYOffset || 0;
+  const maxScroll = Math.max(
+    1,
+    document.documentElement.scrollHeight - window.innerHeight
+  );
+  const progress = Math.min(1, Math.max(0, scrollTop / maxScroll));
+
+  // Amplia suavemente de 1.0 até 1.28 conforme desce até o fim da página
+  const scale = 1 + progress * 0.28;
+  document.documentElement.style.setProperty("--bg-scale", scale.toFixed(4));
+  scrollTicking = false;
+}
+
+function handleScroll() {
+  if (!scrollTicking) {
+    window.requestAnimationFrame(updateBackgroundScaleOnScroll);
+    scrollTicking = true;
+  }
+}
 
 function formatNumber(index, total) {
   const padLength = Math.max(2, String(total).length);
@@ -145,36 +167,11 @@ function showNext() {
   updateLightboxContent();
 }
 
-function updateDesktopBackgroundScroll() {
-  if (window.innerWidth <= 900) {
-    document.documentElement.style.setProperty("--bg-scroll-y", "0%");
-    return;
-  }
-
-  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-  const progress = maxScroll > 0 ? Math.min(Math.max(window.scrollY / maxScroll, 0), 1) : 0;
-  document.documentElement.style.setProperty("--bg-scroll-y", `${(progress * 100).toFixed(2)}%`);
-}
-
-let scrollTicking = false;
-window.addEventListener("scroll", () => {
-  if (!scrollTicking) {
-    window.requestAnimationFrame(() => {
-      updateDesktopBackgroundScroll();
-      scrollTicking = false;
-    });
-    scrollTicking = true;
-  }
-}, { passive: true });
-
-window.addEventListener("resize", updateDesktopBackgroundScroll, { passive: true });
-
 filterBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     filterBtns.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
     renderGallery(btn.dataset.filter);
-    updateDesktopBackgroundScroll();
   });
 });
 
@@ -196,6 +193,9 @@ lightbox.addEventListener("keydown", (e) => {
   }
 });
 
+window.addEventListener("scroll", handleScroll, { passive: true });
+window.addEventListener("resize", handleScroll, { passive: true });
+
 renderGallery();
 renderFeedbacks();
-updateDesktopBackgroundScroll();
+updateBackgroundScaleOnScroll();
