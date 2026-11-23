@@ -11,7 +11,8 @@
     <div class="container header-content">
       <a href="#" class="logo">BETH ILUSTRA</a>
       <nav class="nav">
-        <a href="https://www.behance.net/elizabethmeireles" target="_blank" rel="noopener">Portfólio</a>
+        <a href="#galeria">Portfólio</a>
+        <a href="#feedbacks">Feedbacks</a>
         <a href="#sobre">Sobre & Comissões</a>
         <a href="#contato">Contato</a>
       </nav>
@@ -19,7 +20,7 @@
   </header>
 
   <main class="container">
-    <!-- Filtros -->
+    <!-- Galeria e Filtros -->
     <section id="galeria" class="gallery-section">
       <div class="filters" role="group" aria-label="Filtrar ilustrações">
         <button class="filter-btn active" data-filter="all">Todos</button>
@@ -30,13 +31,33 @@
 
       <!-- Grade gerada via JavaScript -->
       <div id="gallery-grid" class="gallery-grid"></div>
+
+      <div class="portfolio-cta">
+        <a
+          href="https://www.behance.net/elizabethmeireles"
+          target="_blank"
+          rel="noopener"
+          class="cta-btn"
+        >
+          Ver projetos detalhados no Behance
+        </a>
+      </div>
+    </section>
+
+    <!-- Feedbacks -->
+    <section id="feedbacks" class="feedbacks-section">
+      <div class="section-header">
+        <h2>Feedbacks</h2>
+        <p>O que autores e clientes dizem sobre as ilustrações, mapas e capas.</p>
+      </div>
+      <div id="feedbacks-grid" class="feedbacks-grid"></div>
     </section>
 
     <!-- Sobre e Status de Comissões -->
     <section id="sobre" class="about-section">
       <div class="about-text">
         <h2>Sobre</h2>
-        <p>Ilustrador focado em narrativa visual, capas de livros e design de personagens. Trabalho combinando texturas tradicionais com fluxo digital.</p>
+        <p>Ilustradora focada em narrativa visual, capas de livros, mapas ilustrados e design de personagens. Trabalho combinando texturas tradicionais com fluxo digital.</p>
         <p class="commission-badge">Status de Comissões: <strong>Abertas</strong></p>
       </div>
     </section>
@@ -47,15 +68,15 @@
       <p>Para projetos comerciais, licenciamento ou encomendas:</p>
       <div class="contact-details">
         <p>
-          <strong>E-mail:</strong> 
+          <strong>E-mail:</strong>
           <a href="mailto:Elizabethmeirelesart@gmail.com" class="email-link">Elizabethmeirelesart@gmail.com</a>
         </p>
         <p>
-          <strong>Telefone / WhatsApp:</strong> 
+          <strong>Telefone / WhatsApp:</strong>
           <a href="tel:+5500000000000" class="phone-link">(00) 00000-0000</a>
         </p>
         <p>
-          <strong>Instagram:</strong> 
+          <strong>Instagram:</strong>
           <a href="https://instagram.com/seuusuario" target="_blank" rel="noopener" class="instagram-link">@seuusuario</a>
         </p>
       </div>
@@ -70,13 +91,24 @@
   <!-- Lightbox (Modal de Tela Cheia) -->
   <dialog id="lightbox" class="lightbox">
     <button id="close-lightbox" class="close-btn" aria-label="Fechar">&times;</button>
-    <div class="lightbox-content">
-      <img id="lightbox-img" src="" alt="" />
-      <div class="lightbox-info">
-        <h3 id="lightbox-title"></h3>
-        <span id="lightbox-meta"></span>
-        <p id="lightbox-desc"></p>
+
+    <div class="lightbox-topbar">
+      <span id="lightbox-counter" class="lightbox-counter">01 / 09</span>
+    </div>
+
+    <div class="lightbox-stage">
+      <button id="prev-lightbox" class="nav-btn prev-btn" aria-label="Item anterior">&#8249;</button>
+
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="" />
+        <div class="lightbox-info">
+          <h3 id="lightbox-title"></h3>
+          <span id="lightbox-meta"></span>
+          <p id="lightbox-desc"></p>
+        </div>
       </div>
+
+      <button id="next-lightbox" class="nav-btn next-btn" aria-label="Próximo item">&#8250;</button>
     </div>
   </dialog>
 
