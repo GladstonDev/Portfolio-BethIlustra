@@ -18,28 +18,6 @@ const lightboxCounter = document.getElementById("lightbox-counter");
 
 let currentItems = [];
 let currentIndex = 0;
-let scrollTicking = false;
-
-function updateBackgroundScaleOnScroll() {
-  const scrollTop = window.scrollY || window.pageYOffset || 0;
-  const maxScroll = Math.max(
-    1,
-    document.documentElement.scrollHeight - window.innerHeight
-  );
-  const progress = Math.min(1, Math.max(0, scrollTop / maxScroll));
-
-  // Amplia suavemente de 1.0 até 1.28 conforme desce até o fim da página
-  const scale = 1 + progress * 0.28;
-  document.documentElement.style.setProperty("--bg-scale", scale.toFixed(4));
-  scrollTicking = false;
-}
-
-function handleScroll() {
-  if (!scrollTicking) {
-    window.requestAnimationFrame(updateBackgroundScaleOnScroll);
-    scrollTicking = true;
-  }
-}
 
 function formatNumber(index, total) {
   const padLength = Math.max(2, String(total).length);
@@ -193,9 +171,5 @@ lightbox.addEventListener("keydown", (e) => {
   }
 });
 
-window.addEventListener("scroll", handleScroll, { passive: true });
-window.addEventListener("resize", handleScroll, { passive: true });
-
 renderGallery();
 renderFeedbacks();
-updateBackgroundScaleOnScroll();
