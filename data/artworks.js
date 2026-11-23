@@ -36,8 +36,8 @@ export const artworks = [
     medium: "Ilustração digital",
     year: 2025,
     description: "Cena de casal no elevador.",
-    thumb: "assets//thumb//img_4944.JPG.webp",
-    full: "assets//full//img_4944.JPG.webp"
+    thumb: "assets//thumb//IMG_4944.JPG.webp",
+    full: "assets//full//IMG_4944.JPG.webp"
   },
   {
     id: "img-4943",
@@ -46,8 +46,8 @@ export const artworks = [
     medium: "Mapa ilustrado",
     year: 2025,
     description: "Mapa do reino de Izanani.",
-    thumb: "assets//thumb//img_4943.JPG.webp",
-    full: "assets//full//img_4943.JPG.webp"
+    thumb: "assets//thumb//IMG_4943.JPG.webp",
+    full: "assets//full//IMG_4943.JPG.webp"
   },
   {
     id: "img-4942",
