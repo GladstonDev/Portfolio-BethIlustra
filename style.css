@@ -2,7 +2,6 @@
   /* Tons inspirados nas suas artes, levemente mais escuros */
   --bg-orange: #c4835b;
   --bg-blue: #6e9b9a;
-  --bg: url("assets/bg.png") center / cover no-repeat;
   --surface: rgba(22, 27, 29, 0.72);
   --text: #ffffff;
   --muted: #ffffff;
@@ -16,7 +15,6 @@
   --action-btn-bg: #eb8f56;
   --action-btn-hover: #df7b3e;
   --text-shadow-strong: 0 2px 6px rgba(0, 0, 0, 0.45);
-  --bg-scroll-y: 0%;
 }
 
 *,
@@ -33,6 +31,11 @@ html {
 
 body {
   background-color: var(--bg-blue);
+  background-image: url("assets/bg.png");
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-attachment: scroll;
   min-height: 100vh;
   min-height: 100dvh;
   color: var(--text);
@@ -40,22 +43,6 @@ body {
   font-weight: 700;
   line-height: 1.6;
   text-shadow: var(--text-shadow-strong);
-  position: relative;
-}
-
-/* Camada de fundo: ampliada no PC e acompanhando o scroll */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background-color: var(--bg-blue);
-  background-image: url("assets/bg.png");
-  background-position: center var(--bg-scroll-y);
-  background-size: 118% auto;
-  background-repeat: no-repeat;
-  will-change: background-position;
-  pointer-events: none;
 }
 
 h1, h2, h3, strong {
@@ -495,11 +482,6 @@ p, span, blockquote, a, button {
 }
 
 @media (max-width: 900px) {
-  body::before {
-    background-size: cover;
-    background-position: center center;
-  }
-
   .header-content {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -524,9 +506,9 @@ p, span, blockquote, a, button {
 }
 
 @media (max-width: 550px) {
-  body::before {
-    background-size: cover;
-    background-position: center top;
+  body {
+    background-size: 100% auto;
+    background-position: top center;
   }
 
   .logo-img {
