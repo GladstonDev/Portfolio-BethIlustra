@@ -145,11 +145,36 @@ function showNext() {
   updateLightboxContent();
 }
 
+function updateDesktopBackgroundScroll() {
+  if (window.innerWidth <= 900) {
+    document.documentElement.style.setProperty("--bg-scroll-y", "0%");
+    return;
+  }
+
+  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = maxScroll > 0 ? Math.min(Math.max(window.scrollY / maxScroll, 0), 1) : 0;
+  document.documentElement.style.setProperty("--bg-scroll-y", `${(progress * 100).toFixed(2)}%`);
+}
+
+let scrollTicking = false;
+window.addEventListener("scroll", () => {
+  if (!scrollTicking) {
+    window.requestAnimationFrame(() => {
+      updateDesktopBackgroundScroll();
+      scrollTicking = false;
+    });
+    scrollTicking = true;
+  }
+}, { passive: true });
+
+window.addEventListener("resize", updateDesktopBackgroundScroll, { passive: true });
+
 filterBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     filterBtns.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
     renderGallery(btn.dataset.filter);
+    updateDesktopBackgroundScroll();
   });
 });
 
@@ -173,3 +198,4 @@ lightbox.addEventListener("keydown", (e) => {
 
 renderGallery();
 renderFeedbacks();
+updateDesktopBackgroundScroll();
